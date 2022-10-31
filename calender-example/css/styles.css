@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: #eee;
+}
+
+.calender {
+    max-width: 31rem;
+    width: 100%; /* Ta upp maximalt av max-bredden */
+    background-color: #ccc;
+    border-radius: 16px;
+}
+
+.calender__header {
+    background-color: #FE2C2C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 1.5rem;
+}
+
+.calender__days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* Ge mig 7 kolumner, varje kolumn ska vara lika stor */
+}
+
+.calender__days p {
+    display: flex;
+    justify-content: center;
+}
+
+.calender__dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: #fff;
+}
+
+.calender__dates aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calender__dates .weekend {
+    background-color: rgb(238, 238, 238);
+}
+
+.calender__dates .next-month {
+    opacity: 0.4;
+}
+
+.calender__dates .today p {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #FE2C2C;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
