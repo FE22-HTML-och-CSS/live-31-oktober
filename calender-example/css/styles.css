@@ -38,6 +38,7 @@ body {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     background-color: #fff;
+    gap: 2px;
 }
 
 .calender__dates aside {
